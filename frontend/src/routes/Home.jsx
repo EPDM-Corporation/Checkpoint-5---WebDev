@@ -1,9 +1,20 @@
 import React from 'react'
+import './Home.css'
+import Banner from '../components/Banner/Banner'
 
 const Home = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+        <Banner></Banner>
+        {/* SOBRE */}
+        <div className='border-5 h-[629px]'>
+
+        </div>
+
+        {/* CARDS */}
+        <div className='border-5 h-[632px]'>
+
+        </div>
     </div>
   )
 }

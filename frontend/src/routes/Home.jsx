@@ -2,14 +2,14 @@ import React from 'react'
 import './Home.css'
 import Banner from '../components/Banner/Banner'
 import SobreImage from '../assets/sobreimage.png'
-
+import Cards from '../components/Cards/Cards'
 
 const Home = () => {
   return (
     <div>
         <Banner></Banner>
         {/* SOBRE */}
-        <section className='h-[629px] flex  justify-around items-center'>
+        <section className='h-[629px] flex justify-around items-center'>
             <img src={SobreImage} alt="" className='w-[550px] h-[550px]' />
             <div>
                 <h2 className="font-bebas text-[64px]">Sobre o CycloVolt</h2>
@@ -22,10 +22,14 @@ const Home = () => {
         </section>
 
         {/* CARDS */}
-        <section className='border-5 h-[632px] bg-[#F3F3F3]'>
-            <h1>
-                Mais Vendidos
-            </h1>
+        <section className='border-5 h-[632px] bg-[#F3F3F3] flex flex-col items-center justify-start'>
+            <h1 className='w-[232px] h-[71px] bg-[#F0D250] font-bebas text-[36px] rounded-[10px] flex items-center justify-center'>Mais Vendidos</h1>
+            <div>
+                <Cards title='Caloi E-Vibe City Tour'
+                 description='É uma bicicleta elétrica urbana projetada para oferecer
+                conforto e praticidade nos deslocamentos diários'
+                price='R$5.899,99'></Cards>
+            </div>
         </section>
     </div>
   )

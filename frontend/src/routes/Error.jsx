@@ -2,8 +2,9 @@ import React from 'react'
 
 const Error = () => {
   return (
-    <div>
-      <h1>ERRO 404</h1>
+    <div className='my-[25vh] text-[100px] flex flex-col items-center'>
+      <h1 className=''>ERRO!</h1>
+      <h1>Página não encontrada</h1>
     </div>
   )
 }

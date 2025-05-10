@@ -25,12 +25,13 @@ const Home = () => {
         <section className='h-[632px] bg-[#F3F3F3] flex flex-col items-center justify-start'>
             <h1 className='w-[232px] h-[71px] bg-[#F0D250] font-bebas text-[36px] rounded-[10px] flex items-center justify-center'>Mais Vendidos</h1>
             
-            <div className='w-[100vw] px-[48px] py-[37px] flex gap-10 overflow-auto'>
-                <Cards title='Caloi E-Vibe City Tour'
+            <div className='w-[100vw] px-[48px] py-[37px] flex gap-10 overflow-auto justify-center items-center'>
+                {/* <Cards title='Caloi E-Vibe City Tour'
                  description='É uma bicicleta elétrica urbana projetada para oferecer
                 conforto e praticidade nos deslocamentos diários'
-                price='R$5.899,99'></Cards>
-
+                price='R$5.899,99'></Cards> */}
+                
+                <p>Não há nenhuma bicicleta aqui!</p>
 
             </div>
         </section>

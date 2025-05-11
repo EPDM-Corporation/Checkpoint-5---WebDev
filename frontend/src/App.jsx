@@ -7,8 +7,6 @@ import Bicicletas from './routes/Bicicletas'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-// Importando o Font Awesome localmente
-import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (

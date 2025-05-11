@@ -1,17 +1,28 @@
-import React from 'react';
-import './Home.css';
-import Banner from '../components/Banner/Banner';
-import SobreImage from '../assets/sobreimage.png';
-import Cards from '../components/Cards/Cards';
+import {useState, useEffect} from 'react'
+import './Home.css'
+import axios from 'axios'
+
+import Banner from '../components/Banner/Banner'
+import SobreImage from '../assets/sobreimage.png'
+import Cards from '../components/Cards/Cards'
 
 const Home = () => {
-  const scrollToBikes = () => {
-    const section = document.getElementById('catalogo');
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+    const API_URL = 'http://localhost:3000/bikes'
+    const [bikes, setBikes] = useState([])
 
+    const consultarBikes = async()=>{
+        try{
+            const response = await axios.get(API_URL);
+            setBikes(response.data);
+        }catch(error){
+            console.log("Erro ao buscar o código", error);
+        }
+    }
+
+
+    useEffect(()=>{
+        consultarBikes()
+    })
   return (
     <div>
         <Banner />
@@ -29,15 +40,17 @@ const Home = () => {
         </section>
 
         {/* CARDS */}
-        <section id="catalogo" className='h-[632px] bg-[#F3F3F3] flex flex-col items-center justify-start'>
+        <section className='h-[632px] bg-[#F3F3F3] flex flex-col items-center justify-start p-10 gap-10'>
             <h1 className='w-[232px] h-[71px] bg-[#F0D250] font-bebas text-[36px] rounded-[10px] flex items-center justify-center'>Mais Vendidos</h1>
             
-            <div className='w-[100vw] px-[48px] py-[37px] flex gap-10 overflow-auto'>
-                <Cards 
-                  title='Caloi E-Vibe City Tour'
-                  description='É uma bicicleta elétrica urbana projetada para oferecer conforto e praticidade nos deslocamentos diários'
-                  price='R$5.899,99'
-                />
+            <div className='w-full px-[48px] py-[37px] flex gap-10 overflow-x-auto overflow-y-hidden flex-nowrap'>
+                {bikes.length > 0 ? (
+                    bikes.map((bike) => (
+                        <div key={bike.id} className='flex-shrink-0'> {/* Isso impede que os cards encolham */}
+                            <Cards title={bike.modelo} description={bike.descricao} price={bike.preco} />
+                        </div>
+                    ))
+                ) : (<p>Não há nenhuma bicicleta aqui!</p>)}
             </div>
         </section>
     </div>

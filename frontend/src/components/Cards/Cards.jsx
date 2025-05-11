@@ -9,7 +9,7 @@ const Cards = ({title,description,price}) => {
           <h2 className='font-bebas text-[24px]'>{title}</h2>
           <p className='font-montserrat w-[300px] h-[72px] overflow-auto'>{description}</p>
           <div className='h-[51px] flex justify-between items-end'>
-            <h2 className='font-bebas text-[24px]'>{price}</h2>
+            <h2 className='font-bebas text-[24px]'>R$ {price}</h2>
             <button className='w-[129px] h-[33px] bg-[#F0D250] rounded-[30px]'>Comprar</button>
           </div>
         </div>

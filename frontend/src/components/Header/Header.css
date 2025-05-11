@@ -1,1 +1,20 @@
 @import 'tailwindcss';
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.botoes{
+    display: flex;
+    gap: 30px;
+    font-size: x-large;
+}
+#logo{
+    width: 160px;
+    height: 150px;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+#home{
+    color: rgb(21, 68, 21);
+}

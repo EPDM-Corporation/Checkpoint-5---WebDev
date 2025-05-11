@@ -10,7 +10,18 @@ const Port = 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
-let bikes = []
+let bikes = [  {
+    id: uuid(),
+    modelo: "Calloi Elite",
+    descricao: "Bicicleta elétrica com motor potente e bateria de longa duração.",
+    preco: 3999.99
+  },
+  {
+    id: uuid(),
+    modelo: "Sense Impulse",
+    descricao: "Ideal para o uso urbano, com visual moderno e motor eficiente.",
+    preco: 2999.50
+  }]
 
 //CREATE
 app.post('/bikes', (req,res)=>{

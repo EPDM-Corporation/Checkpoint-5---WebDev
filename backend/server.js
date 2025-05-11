@@ -47,7 +47,7 @@ app.put('/bikes/:id',(req,res)=>{
 app.delete('/bikes/:id',(req,res)=>{
     const bikeId = req.params.id;
     const inicioBike = bikes.length;
-    bikes = bikes.filter(item => item.id !== bikeID);
+    bikes = bikes.filter(item => item.id !== bikeId);
     if (bikes.length === inicioBike){
         return res.status(404).json({error:"Bike não foi encontrada"})
     }

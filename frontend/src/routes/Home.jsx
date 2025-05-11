@@ -43,16 +43,14 @@ const Home = () => {
         <section className='h-[632px] bg-[#F3F3F3] flex flex-col items-center justify-start p-10 gap-10'>
             <h1 className='w-[232px] h-[71px] bg-[#F0D250] font-bebas text-[36px] rounded-[10px] flex items-center justify-center'>Mais Vendidos</h1>
             
-            <div className='w-[99vw] px-[48px] py-[37px] flex gap-10 overflow-auto overflow-y-hidden justify-center items-center'>
+            <div className='w-full px-[48px] py-[37px] flex gap-10 overflow-x-auto overflow-y-hidden flex-nowrap'>
                 {bikes.length > 0 ? (
-                    bikes.map((bike)=>(
-                <Cards key={bike.id} title={bike.modelo}
-                 description={bike.descricao}
-                price={bike.preco}></Cards>
+                    bikes.map((bike) => (
+                        <div key={bike.id} className='flex-shrink-0'> {/* Isso impede que os cards encolham */}
+                            <Cards title={bike.modelo} description={bike.descricao} price={bike.preco} />
+                        </div>
                     ))
-                ):(<p>Não há nenhuma bicicleta aqui!</p>)}
-
-                
+                ) : (<p>Não há nenhuma bicicleta aqui!</p>)}
             </div>
         </section>
     </div>

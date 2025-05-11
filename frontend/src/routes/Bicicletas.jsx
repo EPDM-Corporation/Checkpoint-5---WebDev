@@ -111,7 +111,7 @@ const Bicicletas = () => {
                 />
                 <label htmlFor="modelo" className='font-montserrat'>Preço</label>
                 <input
-                type="text" 
+                type="number" 
                 placeholder='Insira o preço' 
                 className='bg-[#EEEEEE] h-[46px] rounded-[30px] placeholder:p-2' 
                 id='preco'

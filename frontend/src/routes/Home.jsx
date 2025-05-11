@@ -40,10 +40,10 @@ const Home = () => {
         </section>
 
         {/* CARDS */}
-        <section className='h-[632px] bg-[#F3F3F3] flex flex-col items-center justify-start p-10'>
+        <section className='h-[632px] bg-[#F3F3F3] flex flex-col items-center justify-start p-10 gap-10'>
             <h1 className='w-[232px] h-[71px] bg-[#F0D250] font-bebas text-[36px] rounded-[10px] flex items-center justify-center'>Mais Vendidos</h1>
             
-            <div className='w-[99vw] px-[48px] py-[37px] flex gap-10 overflow-auto justify-center items-center'>
+            <div className='w-[99vw] px-[48px] py-[37px] flex gap-10 overflow-auto overflow-y-hidden justify-center items-center'>
                 {bikes.length > 0 ? (
                     bikes.map((bike)=>(
                 <Cards key={bike.id} title={bike.modelo}

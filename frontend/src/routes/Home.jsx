@@ -25,7 +25,7 @@ const Home = () => {
     })
   return (
     <div>
-        <Banner></Banner>
+        <Banner />
         {/* SOBRE */}
         <section className='h-[629px] flex justify-around items-center'>
             <img src={SobreImage} alt="" className='w-[550px] h-[550px]' />
@@ -54,7 +54,8 @@ const Home = () => {
             </div>
         </section>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
+

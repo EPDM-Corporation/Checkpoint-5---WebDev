@@ -1,11 +1,27 @@
-import React from 'react'
+import React from 'react';
+import './Banner.css';
+import bikeImage from '../../assets/bannerbike.png';
 
 const Banner = () => {
-  return (
-    <div className='border-5 h-[594px]'>
-      Banner
-    </div>
-  )
-}
+  const scrollToBikes = () => {
+    const section = document.getElementById('catalogo');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-export default Banner
+  return (
+    <div className="banner-wrapper">
+      <div className="banner-content">
+        <h1>LIBERDADE ELÉTRICA<br />SOBRE DUAS RODAS</h1>
+        <p>AUTONOMIA, DESIGN E ZERO EMISSÕES.<br />PEDALE MENOS. CURTA MAIS.</p>
+        <button className="banner-button" onClick={scrollToBikes}>SAIBA MAIS</button>
+      </div>
+      <div className="banner-image">
+        <img src={bikeImage} alt="Bike" />
+      </div>
+    </div>
+  );
+};
+
+export default Banner;

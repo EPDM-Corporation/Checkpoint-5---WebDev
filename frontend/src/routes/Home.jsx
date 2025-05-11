@@ -1,13 +1,20 @@
-import React from 'react'
-import './Home.css'
-import Banner from '../components/Banner/Banner'
-import SobreImage from '../assets/sobreimage.png'
-import Cards from '../components/Cards/Cards'
+import React from 'react';
+import './Home.css';
+import Banner from '../components/Banner/Banner';
+import SobreImage from '../assets/sobreimage.png';
+import Cards from '../components/Cards/Cards';
 
 const Home = () => {
+  const scrollToBikes = () => {
+    const section = document.getElementById('catalogo');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div>
-        <Banner></Banner>
+        <Banner />
         {/* SOBRE */}
         <section className='h-[629px] flex justify-around items-center'>
             <img src={SobreImage} alt="" className='w-[550px] h-[550px]' />
@@ -22,20 +29,20 @@ const Home = () => {
         </section>
 
         {/* CARDS */}
-        <section className='h-[632px] bg-[#F3F3F3] flex flex-col items-center justify-start'>
+        <section id="catalogo" className='h-[632px] bg-[#F3F3F3] flex flex-col items-center justify-start'>
             <h1 className='w-[232px] h-[71px] bg-[#F0D250] font-bebas text-[36px] rounded-[10px] flex items-center justify-center'>Mais Vendidos</h1>
             
             <div className='w-[100vw] px-[48px] py-[37px] flex gap-10 overflow-auto'>
-                <Cards title='Caloi E-Vibe City Tour'
-                 description='É uma bicicleta elétrica urbana projetada para oferecer
-                conforto e praticidade nos deslocamentos diários'
-                price='R$5.899,99'></Cards>
-
-
+                <Cards 
+                  title='Caloi E-Vibe City Tour'
+                  description='É uma bicicleta elétrica urbana projetada para oferecer conforto e praticidade nos deslocamentos diários'
+                  price='R$5.899,99'
+                />
             </div>
         </section>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
+

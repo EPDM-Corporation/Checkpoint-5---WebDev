@@ -13,10 +13,10 @@ const Footer = () => {
       <div className="bg-[#F0D250] h-[70px] md:h-[88px] flex flex-col md:flex-row items-center justify-center md:justify-around gap-2 md:gap-0 p-2">
         <h2 className="font-bebas text-2xl md:text-3xl lg:text-[36px]">Siga nossas redes sociais</h2>
         <div className="flex gap-3 md:gap-5">
-          <FontAwesomeIcon icon={faFacebook} size="lg" md="xl" lg="2x" className="hover:text-white transition-colors"/>
-          <FontAwesomeIcon icon={faLinkedin} size="lg" md="xl" lg="2x" className="hover:text-white transition-colors"/>
-          <FontAwesomeIcon icon={faInstagram} size="lg" md="xl" lg="2x" className="hover:text-white transition-colors"/>
-          <FontAwesomeIcon icon={faYoutube} size="lg" md="xl" lg="2x" className="hover:text-white transition-colors"/>
+          <FontAwesomeIcon icon={faFacebook} size="2x"  className="hover:text-white transition-colors"/>
+          <FontAwesomeIcon icon={faLinkedin} size="2x" className="hover:text-white transition-colors"/>
+          <FontAwesomeIcon icon={faInstagram} size="2x" className="hover:text-white transition-colors"/>
+          <FontAwesomeIcon icon={faYoutube} size="2x" className="hover:text-white transition-colors"/>
         </div>
       </div>
 

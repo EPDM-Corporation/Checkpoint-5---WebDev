@@ -26,8 +26,8 @@ const Header = () => {
           <Link to="/" className='font-montserrat text-lg lg:text-[26px] text-[#8C8C15] underline-animation'>Home</Link>
           <Link to="/bicicletas" className='font-montserrat text-lg lg:text-[26px] underline-animation-other'>Bicicletas</Link>
           <Link to="/contatos" className='font-montserrat text-lg lg:text-[26px] underline-animation-other'>Contatos</Link>
-          <FontAwesomeIcon icon={faCartShopping} size='xl' className="lg:size-[2x] xl:size-[3x]"/>
-          <FontAwesomeIcon icon={faUser} size='xl' className="lg:size-[2x] xl:size-[3x]"/>
+          <FontAwesomeIcon icon={faCartShopping} size='3x' className="lg:size-[2x] xl:size-[3x]"/>
+          <FontAwesomeIcon icon={faUser} size='3x' className="lg:size-[2x] xl:size-[3x]"/>
         </div>
         
         {/* Menu hamburguer para mobile */}

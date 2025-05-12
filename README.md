@@ -25,5 +25,5 @@ Nosso grupo fez um site E-Commerce com o tema de bicicletas elétricas. Este pro
  - Guilherme Vital RM: 560073 (Footer)
  - Erik Kaiyu Suguiyama RM: 559273 (Design e Todo resto)
 
-## Link do Repositório
-https://github.com/EPDM-Corporation/Checkpoint-5---WebDev
+## Link do Repositório da Organização
+[https://github.com/EPDM-Corporation/Checkpoint-5---WebDev](https://github.com/EPDM-Corporation)

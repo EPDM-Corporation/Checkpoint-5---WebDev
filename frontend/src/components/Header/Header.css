@@ -1,20 +1,15 @@
-@import 'tailwindcss';
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.underline-animation{
+  text-decoration: underline 0.10em rgba(189, 41, 41, 0);
+  transition: text-decoration-color 300ms;
 }
-.botoes{
-    display: flex;
-    gap: 30px;
-    font-size: x-large;
+.underline-animation:hover{
+    text-decoration-color: #8C8C15;
 }
-#logo{
-    width: 160px;
-    height: 150px;
-    padding-top: 40px;
-    padding-left: 20px;
+
+.underline-animation-other{
+  text-decoration: underline 0.10em rgba(189, 41, 41, 0);
+  transition: text-decoration-color 300ms;
 }
-#home{
-    color: rgb(21, 68, 21);
+.underline-animation-other:hover{
+    text-decoration-color: #000;
 }

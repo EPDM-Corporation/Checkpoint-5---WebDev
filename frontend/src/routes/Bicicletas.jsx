@@ -95,7 +95,7 @@ const Bicicletas = () => {
                 <input
                 type="text"
                 placeholder='Insira o Modelo'
-                className='bg-[#EEEEEE] h-[46px] rounded-[30px] placeholder:p-2'
+                className='bg-[#EEEEEE] h-[46px] rounded-[10px] placeholder:p-2'
                 id='modelo'
                 value={novoBike.modelo}
                 onChange={(e) => setNovoBike({...novoBike, modelo:e.target.value})}
@@ -104,7 +104,7 @@ const Bicicletas = () => {
                 <input
                 type="text"
                 placeholder='Insira a Descrição' 
-                className='bg-[#EEEEEE] h-[46px] rounded-[30px] placeholder:p-2' 
+                className='bg-[#EEEEEE] h-[46px] rounded-[10px] placeholder:p-2' 
                 id='descricao'
                 value={novoBike.descricao}
                 onChange={(e)=> setNovoBike({...novoBike, descricao:e.target.value})}
@@ -113,7 +113,7 @@ const Bicicletas = () => {
                 <input
                 type="number" 
                 placeholder='Insira o preço' 
-                className='bg-[#EEEEEE] h-[46px] rounded-[30px] placeholder:p-2' 
+                className='bg-[#EEEEEE] h-[46px] rounded-[10px] placeholder:p-2' 
                 id='preco'
                 value={novoBike.preco}
                 onChange={(e)=> setNovoBike({...novoBike, preco:e.target.value})}
@@ -140,8 +140,8 @@ const Bicicletas = () => {
                 <p className='overflow-auto w-[174px] h-[59px] font-montserrat'> {bike.modelo}</p>
                 <p className='overflow-auto w-[174px] h-[59px] font-montserrat'>{bike.descricao}</p>
                 <p className='overflow-auto w-[174px] h-[59px] font-montserrat'>{bike.preco}</p>
-                <button className='bg-[#F0D250] w-[108px] h-[45px] rounded-[30px] hover:bg-yellow-500 transition-colors ' onClick={() => handleEditar(bike)} >Editar</button>
-                <button className='bg-[#F07D7D] w-[108px] h-[45px] rounded-[30px] hover:bg-red-500 transition-colors text-white' onClick={() => deletarBike(bike.id)} >Excluir</button>
+                <button className='bg-[#F0D250] w-[108px] h-[45px] rounded-[10px] hover:bg-yellow-500 transition-colors ' onClick={() => handleEditar(bike)} >Editar</button>
+                <button className='bg-[#F07D7D] w-[108px] h-[45px] rounded-[10px] hover:bg-red-500 transition-colors text-white' onClick={() => deletarBike(bike.id)} >Excluir</button>
             </div>
             ))}
         </div>

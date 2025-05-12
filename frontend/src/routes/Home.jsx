@@ -27,7 +27,7 @@ const Home = () => {
         <div className="overflow-x-hidden">
             <Banner />
             
-            {/* SOBRE - Modificado para responsividade */}
+
             <section className='py-10 md:py-20 lg:h-[629px] flex flex-col lg:flex-row justify-around items-center px-4 lg:px-0'>
                 <img 
                     src={SobreImage} 
@@ -46,13 +46,13 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* CARDS - Modificado para responsividade */}
-            <section className='min-h-[660px] lg:h-[660px] bg-[#F3F3F3] flex flex-col items-center justify-start py-10 lg:py-20 gap-6 lg:gap-10 px-4'>
+
+            <section className='min-h-[660px] lg:h-[660px] bg-[#F3F3F3] flex flex-col items-center justify-start py-10 lg:py-20 gap-6 lg:gap-10 px-4 h-[632px]'>
                 <h1 className='w-[200px] md:w-[232px] h-[60px] md:h-[71px] bg-[#F0D250] font-bebas text-2xl md:text-3xl lg:text-[36px] rounded-[10px] flex items-center justify-center'>
                     Mais Vendidos
                 </h1>
                 
-                <div className='w-full flex gap-4 md:gap-10 overflow-x-auto overflow-y-hidden flex-nowrap'>
+                <div className='w-full flex gap-4 h-[470px] md:gap-10 overflow-x-auto overflow-y-hidden flex-nowrap'>
                     {bikes.length > 0 ? (
                         bikes.map((bike) => (
                             <div key={bike.id} className='h-[600px]'>

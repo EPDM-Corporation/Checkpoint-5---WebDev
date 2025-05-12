@@ -10,7 +10,7 @@ import {faUser} from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   return (
     <div className=' h-[189px] flex justify-between items-center p-5'>
-        <img src={Logo} alt="" className='w-[176px] h-[121px] m-5' />
+        <Link to="/"><img src={Logo} alt="" className='w-[176px] h-[121px] m-5' /></Link>
         <div className='flex items-center gap-10 max-w-[882px] m-5'>
           <Link to="/" className='font-montserrat text-[26px] text-[#8C8C15] underline-animation'>Home</Link>
           <Link to="/bicicletas"className='font-montserrat text-[26px] underline-animation-other'>Bicicletas</Link>

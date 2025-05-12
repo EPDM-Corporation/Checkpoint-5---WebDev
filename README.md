@@ -26,4 +26,4 @@ Nosso grupo fez um site E-Commerce com o tema de bicicletas elétricas. Este pro
  - Erik Kaiyu Suguiyama RM: 559273 (Design e Todo resto)
 
 ## Link do Repositório da Organização
-[https://github.com/EPDM-Corporation/Checkpoint-5---WebDev](https://github.com/EPDM-Corporation)
+https://github.com/EPDM-Corporation
